@@ -1,0 +1,1913 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday Kannu Akka 💜</title>
+
+    <style>
+        /* ================= BASIC ================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background:
+                radial-gradient(circle at 15% 20%, #20275f 0%, transparent 30%),
+                radial-gradient(circle at 85% 25%, #48175e 0%, transparent 30%),
+                linear-gradient(135deg, #030512, #08091b, #12051f);
+
+            color: white;
+            overflow-x: hidden;
+        }
+
+        /* ================= STARS ================= */
+
+        .stars {
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .star {
+            position: absolute;
+            width: 3px;
+            height: 3px;
+            border-radius: 50%;
+            background: white;
+            box-shadow: 0 0 12px #8ddfff;
+            animation: twinkle 2s infinite alternate;
+        }
+
+        @keyframes twinkle {
+            from {
+                opacity: .2;
+                transform: scale(.6);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1.4);
+            }
+        }
+
+        /* ================= SECTIONS ================= */
+
+        section {
+            min-height: 100vh;
+            padding: 70px 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .container {
+            max-width: 1050px;
+            margin: auto;
+        }
+
+        .title {
+            text-align: center;
+            font-size: clamp(2.2rem, 8vw, 4.5rem);
+
+            background:
+                linear-gradient(90deg,
+                    #5bdcff,
+                    #a778ff,
+                    #ff82da);
+
+            -webkit-background-clip: text;
+            color: transparent;
+
+            margin-bottom: 15px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #d8d7ee;
+            margin-bottom: 40px;
+        }
+
+        /* ================= HERO ================= */
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 850px;
+        }
+
+        .small-text {
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: #8fdfff;
+            margin-bottom: 20px;
+            font-size: .8rem;
+        }
+
+        .hero h1 {
+            font-size: clamp(3.5rem, 13vw, 7.5rem);
+            line-height: .9;
+
+            background:
+                linear-gradient(90deg,
+                    #53dfff,
+                    #a979ff,
+                    #ff76d7);
+
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .hero h2 {
+            margin-top: 25px;
+            font-size: clamp(1.3rem, 4vw, 2.3rem);
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: 25px auto;
+            line-height: 1.8;
+            color: #d6d4eb;
+        }
+
+        /* ================= BUTTON ================= */
+
+        .glow-button {
+            border: none;
+            padding: 15px 28px;
+            border-radius: 50px;
+
+            background:
+                linear-gradient(90deg,
+                    #178dff,
+                    #7b45ff,
+                    #e34bd0);
+
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+
+            box-shadow:
+                0 0 25px rgba(110, 120, 255, .55);
+
+            transition: .3s;
+        }
+
+        .glow-button:hover {
+            transform: translateY(-3px) scale(1.03);
+
+            box-shadow:
+                0 0 40px rgba(180, 100, 255, .8);
+        }
+
+        /* ================= HEARTS ================= */
+
+        .heart {
+            position: fixed;
+            pointer-events: none;
+            z-index: 100;
+
+            animation:
+                heartFly 2s ease-out forwards;
+        }
+
+        @keyframes heartFly {
+
+            0% {
+                transform:
+                    translateY(0) scale(.4);
+
+                opacity: 1;
+            }
+
+            100% {
+                transform:
+                    translateY(-250px) rotate(30deg) scale(1.4);
+
+                opacity: 0;
+            }
+        }
+
+        /* ================= CAKE ================= */
+
+        .cake-area {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .cake {
+            position: relative;
+            width: 250px;
+            height: 180px;
+            margin: 50px auto 25px;
+        }
+
+        .cake-body {
+            position: absolute;
+            bottom: 0;
+
+            width: 250px;
+            height: 100px;
+
+            background:
+                linear-gradient(#9c5aef,
+                    #5c2eb0);
+
+            border-radius:
+                15px 15px 25px 25px;
+
+            box-shadow:
+                0 15px 40px rgba(130, 60, 255, .45);
+        }
+
+        .cake-top {
+            position: absolute;
+            top: 30px;
+
+            width: 250px;
+            height: 55px;
+
+            background: #c978ff;
+
+            border-radius: 50%;
+        }
+
+        .cream {
+            position: absolute;
+            top: 57px;
+
+            width: 250px;
+            height: 25px;
+
+            background: white;
+            border-radius: 50%;
+        }
+
+        .candle {
+            position: absolute;
+            top: -20px;
+
+            width: 13px;
+            height: 60px;
+
+            background:
+                linear-gradient(#71ddff,
+                    #407eff);
+
+            border-radius: 5px;
+        }
+
+        .candle:nth-of-type(1) {
+            left: 70px;
+        }
+
+        .candle:nth-of-type(2) {
+            left: 118px;
+        }
+
+        .candle:nth-of-type(3) {
+            left: 166px;
+        }
+
+        .flame {
+            position: absolute;
+
+            width: 16px;
+            height: 23px;
+
+            top: -25px;
+            left: -1px;
+
+            background: #ffd35a;
+
+            border-radius:
+                50% 50% 50% 0;
+
+            transform: rotate(-45deg);
+
+            box-shadow:
+                0 0 20px #ffd35a;
+
+            animation:
+                flicker .4s infinite alternate;
+        }
+
+        @keyframes flicker {
+
+            to {
+                transform:
+                    rotate(-45deg) scale(1.15);
+            }
+        }
+
+        .candle.out .flame {
+            display: none;
+        }
+
+        /* ================= CARDS ================= */
+
+        .card {
+
+            background:
+                rgba(255, 255, 255, .07);
+
+            border:
+                1px solid rgba(150, 130, 255, .25);
+
+            backdrop-filter: blur(14px);
+
+            border-radius: 25px;
+
+            padding: 28px;
+
+            box-shadow:
+                0 15px 45px rgba(0, 0, 0, .3);
+
+            transition: .3s;
+        }
+
+        .card:hover {
+
+            transform: translateY(-5px);
+
+            border-color:
+                rgba(130, 210, 255, .55);
+
+            box-shadow:
+                0 15px 50px rgba(77, 140, 255, .2);
+        }
+
+        .card h3 {
+            color: #8fdcff;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #dddaf0;
+            line-height: 1.8;
+        }
+
+        /* ================= MESSAGE ================= */
+
+        .message-box {
+
+            max-width: 820px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .message-box p {
+
+            font-size: 1.1rem;
+            line-height: 2;
+        }
+
+        /* ================= OPEN WHEN ================= */
+
+        .grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(auto-fit,
+                    minmax(230px, 1fr));
+
+            gap: 20px;
+        }
+
+        .open-card {
+
+            min-height: 190px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            flex-direction: column;
+
+            text-align: center;
+
+            cursor: pointer;
+        }
+
+        .icon {
+
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+        }
+
+        .open-card .inside {
+
+            display: none;
+
+            margin-top: 15px;
+
+            color: #dddaf0;
+            line-height: 1.7;
+        }
+
+        .open-card.active .inside {
+            display: block;
+        }
+
+        .open-card.active .cover {
+            display: none;
+        }
+
+        /* ================= GALLERY ================= */
+
+        .gallery {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 18px;
+        }
+
+        .photo {
+
+            aspect-ratio: 1;
+
+            border-radius: 20px;
+
+            overflow: hidden;
+
+            border:
+                2px solid rgba(155, 130, 255, .3);
+
+            background:
+                rgba(255, 255, 255, .05);
+        }
+
+        .photo img {
+
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+
+            display: block;
+
+            transition: .4s;
+        }
+
+        .photo:hover img {
+            transform: scale(1.08);
+        }
+
+        /* ================= MEMORY CARDS ================= */
+
+        .memory-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(auto-fit,
+                    minmax(220px, 1fr));
+
+            gap: 20px;
+        }
+
+        /* ================= MONTHS ================= */
+
+        .month {
+
+            text-align: center;
+        }
+
+        .month h3 {
+
+            font-size: 1.6rem;
+
+            color: #c797ff;
+
+            margin-bottom: 15px;
+        }
+
+        /* ================================================= */
+        /* ================= FLIGHT SECTION ================ */
+        /* ================================================= */
+
+        .flight-section {
+            overflow: hidden;
+        }
+
+        .flight-card {
+
+            margin: 40px auto;
+
+            padding: 40px 25px;
+
+            max-width: 1000px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            gap: 25px;
+
+            background:
+                rgba(255, 255, 255, .06);
+
+            border:
+                1px solid rgba(145, 130, 255, .3);
+
+            border-radius: 30px;
+
+            backdrop-filter: blur(15px);
+
+            overflow: hidden;
+        }
+
+        .location {
+
+            width: 180px;
+
+            text-align: center;
+
+            z-index: 2;
+        }
+
+        .location .flag {
+
+            font-size: 4rem;
+
+            margin-bottom: 10px;
+        }
+
+        .location h3 {
+
+            color: #9bdfff;
+
+            font-size: 1.5rem;
+        }
+
+        .location p {
+
+            color: #aaa8c8;
+
+            margin-top: 7px;
+
+            font-size: .85rem;
+        }
+
+        .flight-route {
+
+            position: relative;
+
+            flex: 1;
+
+            height: 160px;
+        }
+
+        .route-line {
+
+            position: absolute;
+
+            top: 80px;
+
+            left: 0;
+
+            right: 0;
+
+            border-top:
+                2px dashed rgba(130, 210, 255, .6);
+        }
+
+        .plane {
+
+            position: absolute;
+
+            top: 50px;
+
+            left: 0;
+
+            font-size: 2.7rem;
+
+            animation:
+                flyPlane 4s ease-in-out infinite;
+
+            filter:
+                drop-shadow(0 0 12px #8bdcff);
+        }
+
+        @keyframes flyPlane {
+
+            0% {
+
+                left: 0;
+
+                transform:
+                    translateY(20px) rotate(-5deg);
+            }
+
+            50% {
+
+                left: 45%;
+
+                transform:
+                    translateY(-35px) rotate(3deg);
+            }
+
+            100% {
+
+                left: 90%;
+
+                transform:
+                    translateY(20px) rotate(5deg);
+            }
+        }
+
+        .cloud {
+
+            position: absolute;
+
+            opacity: .7;
+
+            font-size: 2rem;
+        }
+
+        .cloud1 {
+
+            top: 10px;
+            left: 25%;
+
+            animation:
+                cloudMove 5s infinite alternate;
+        }
+
+        .cloud2 {
+
+            bottom: 5px;
+            right: 20%;
+
+            animation:
+                cloudMove 6s infinite alternate-reverse;
+        }
+
+        @keyframes cloudMove {
+
+            from {
+                transform: translateX(-10px);
+            }
+
+            to {
+                transform: translateX(20px);
+            }
+        }
+
+        .spark {
+
+            position: absolute;
+
+            animation:
+                sparkle 1.5s infinite alternate;
+        }
+
+        .spark1 {
+            top: 20px;
+            left: 42%;
+        }
+
+        .spark2 {
+            bottom: 15px;
+            left: 62%;
+        }
+
+        .spark3 {
+            top: 10px;
+            right: 15%;
+        }
+
+        @keyframes sparkle {
+
+            from {
+                opacity: .2;
+                transform: scale(.7);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1.3);
+            }
+        }
+
+        .flight-message {
+
+            max-width: 820px;
+
+            margin: 25px auto;
+
+            text-align: center;
+        }
+
+        /* ================= FINAL ================= */
+
+        .final {
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            text-align: center;
+        }
+
+        .final-box {
+
+            max-width: 850px;
+        }
+
+        .final-box h1 {
+
+            font-size:
+                clamp(2.7rem,
+                    9vw,
+                    5.5rem);
+
+            background:
+                linear-gradient(90deg,
+                    #5bdcff,
+                    #b783ff,
+                    #ff8edc);
+
+            color: transparent;
+        }
+
+        .final-box p {
+
+            line-height: 2;
+
+            color: #dedcf0;
+
+            margin: 25px 0;
+        }
+
+        /* ================= FOOTER ================= */
+
+        footer {
+
+            text-align: center;
+
+            padding: 30px 15px;
+
+            color: #aaa6c8;
+
+            position: relative;
+
+            z-index: 1;
+        }
+
+        /* ================= MOBILE ================= */
+
+        @media(max-width:700px) {
+
+            .gallery {
+
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .card {
+                padding: 22px;
+            }
+
+            .flight-card {
+
+                flex-direction: column;
+
+                padding: 30px 15px;
+            }
+
+            .flight-route {
+
+                width: 100%;
+
+                height: 160px;
+            }
+
+            .location {
+
+                width: 100%;
+            }
+        }
+
+        @media(max-width:420px) {
+
+            section {
+                padding:
+                    55px 15px;
+            }
+
+            .cake {
+
+                transform:
+                    scale(.85);
+            }
+
+            .gallery {
+
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+
+    <!-- ================= STARS ================= -->
+
+    <div class="stars" id="stars"></div>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <div class="small-text">
+                A little surprise made with love 💜
+            </div>
+
+            <h1>
+                Happy Birthday<br>
+                Kannu Akka
+            </h1>
+
+            <h2>
+                💜 To My Favourite Sister 💜
+            </h2>
+
+            <p>
+
+                Today isn't just another day.
+
+                It's the day someone incredibly special
+                was born.
+
+                So I made you a little corner of the internet
+                just for you. 💜💜
+
+            </p>
+
+            <button type="button" class="glow-button" onclick="scrollToCake()">
+
+                Open Your Surprise 💜
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CAKE ================= -->
+
+    <section id="cakeSection">
+
+        <div class="container">
+
+            <h2 class="title">
+                Make A Wish 💜
+            </h2>
+
+            <p class="subtitle">
+                Tap the button and blow out the candles!
+            </p>
+
+
+            <div class="cake-area">
+
+
+                <div class="cake">
+
+                    <div class="cake-top"></div>
+
+                    <div class="cream"></div>
+
+                    <div class="cake-body"></div>
+
+
+                    <div class="candle">
+                        <div class="flame"></div>
+                    </div>
+
+                    <div class="candle">
+                        <div class="flame"></div>
+                    </div>
+
+                    <div class="candle">
+                        <div class="flame"></div>
+                    </div>
+
+                </div>
+
+
+                <button type="button" class="glow-button" onclick="blowCandles()">
+
+                    💜 Blow Candles
+
+                </button>
+
+
+                <p id="wishText" style="
+margin-top:20px;
+color:#b9eaff;
+">
+
+                    Make your biggest wish... 💜
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MAIN MESSAGE ================= -->
+
+    <section>
+
+        <div class="container">
+
+            <h2 class="title">
+                For You, Kannu Akka 💜
+            </h2>
+
+
+            <div class="message-box card">
+
+                <p>
+
+                    Dear Kannu Akka 💜,
+
+                    Happy Birthday to the person who is not just my sister, but also one of my favourite people in the
+                    whole world. 💜💜
+
+                    I honestly don't know how to put everything I feel into words. There are so many little memories of
+                    us that I keep thinking about�the random talks, our silly jokes, the things we ate, dancing
+                    together, playing games, laughing over the most stupid things, and all those moments that probably
+                    seemed ordinary at the time but mean so much to me now.
+
+                    I wish I could collect every one of those moments and keep them in a little box, so whenever I miss
+                    you, I could open it and feel like we're together again. 💜💜
+
+                    Things feel different when someone you love is far away. I may not be able to see you whenever I
+                    want, talk to you whenever I feel like it, or make new memories with you every day, but one thing
+                    distance can never change is our bond.
+
+                    No matter how many kilometres are between us, you will always be my Kannu Akka. 💜💜💜💜💜💜💜
+
+                    I hope you know how special you are to me. And I hope that whenever you have a bad day, you remember
+                    that somewhere there is a little sister who is always cheering for you, thinking about you, and
+                    wishing the very best for you.
+
+                    On your birthday, I don't just wish you happiness for today. I wish that every day ahead gives you a
+                    reason to smile, something to be proud of, people who truly value you, and memories that you'll want
+                    to keep forever. 💜
+
+                    And Akka, please never forget our memories. Never forget our talks, our laughter, our crazy moments,
+                    and all the little things that made our time together so special.
+
+                    Even if life takes us to different places, I hope we never become strangers. I hope years from now
+                    we can look back at these memories and laugh about how crazy we were. 💜💜
+
+                    You will always have a special place in my heart.
+
+                    Happy Birthday, Kannu Akka. 💜💜
+
+                    I miss you, I love you, and I am so lucky to have you as my sister.
+
+                    Here's to you, your dreams, your happiness, and all the beautiful memories still waiting for us. 💜
+
+                    Always your little sister,
+                    Jiya 💜
+
+
+                    <br><br>
+
+
+
+                    <br><br>
+
+                    No matter how far apart we are,
+                    some bonds don't become smaller with distance.
+
+                    They become stronger with every memory. 💜
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= OPEN WHEN ================= -->
+
+    <section>
+
+        <div class="container">
+
+            <h2 class="title">
+                Open When... 💜
+            </h2>
+
+            <p class="subtitle">
+                Tap a card to open it.
+            </p>
+
+
+            <div class="grid">
+
+
+                <div class="card open-card" onclick="toggleCard(this)">
+
+                    <div class="cover">
+
+                        <div class="icon">💜</div>
+
+                        <h3>
+                            Open When You're Sad
+                        </h3>
+
+                    </div>
+
+                    <div class="inside">
+
+                        💜 Hey, don't forget that you're loved.
+
+                        <br><br>
+
+                        💜💜
+                        🚨 EMERGENCY MESSAGE FOR KANNU AKKA 🚨
+
+                        STOP. ✋
+
+                        Why are you sad??? 😭
+                        Who gave you permission to have a bad mood without informing me first?! 😤😂
+
+                        Okay okay… breathe. 🫵😂
+
+                        First, remember that you have a tiny, slightly annoying, extremely amazing sister who is always
+                        ready to disturb you, make you laugh, steal your food, and remind you that you're stuck with me
+                        FOREVER. 💀💙
+
+                        If you're still sad, immediately remember:
+
+                        😂 Our stupid conversations
+                        🍕 All the food we ate
+                        💃 Our random dancing
+                        🎮 Our games
+                        🤦‍♀️ All the nonsense we have done
+                        😭 And all the times we laughed for absolutely NO reason!
+
+                        And if none of that works...
+
+                        Imagine me standing in front of you doing the most embarrassing dance ever just to make you
+                        laugh. 💃🕺😭
+
+                        Still sad???
+
+                        Okay. Final warning. 🚨
+
+                        SMILE RIGHT NOW. 😤
+
+                        Because somewhere far away, your little sister is probably thinking:
+
+                        “Why is my Kannu Akka sad when she has ME?” 😌💅😂
+
+                        Now go drink some water, fix that face, and come back to being your normal crazy self.
+
+                        And remember...
+
+                        YOU CAN'T GET RID OF ME.
+                        NOT TODAY.
+                        NOT TOMORROW.
+                        NEVER. 😭😂💙
+
+                        Love you, drama queen. 💜
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="card open-card" onclick="toggleCard(this)">
+
+                    <div class="cover">
+
+                        <div class="icon">💜</div>
+
+                        <h3>
+                            Open When You're Happy
+                        </h3>
+
+                    </div>
+
+                    <div class="inside">
+
+                        💜 Your happiness makes everyone around you happier too!
+
+                        <br><br>
+
+                        💜💜
+                        🚨 ATTENTION KANNU AKKA 🚨
+
+                        WAITTT… YOU'RE HAPPY?! 😭😂
+
+                        Okay, who are you and what have you done with my Kannu Akka? 👀
+
+                        But honestly… seeing you happy makes me happy too. 💙 So DON'T YOU DARE stop smiling!
+
+                        Since you're already in a good mood, this is the perfect time to remember all our nonsense:
+
+                        😂 Our completely unnecessary conversations
+                        🍕 Our food adventures
+                        💃 Our random dancing
+                        🎮 Our games
+                        🤣 The moments when we laughed at things that weren't even funny
+                        🤦‍♀️ And all the crazy things only WE understand!
+
+                        And because you're happy right now, I have one very important instruction:
+
+                        <strong>CELEBRATE. IMMEDIATELY.</strong> 🥳
+
+                        Put on your favourite song. 🎶
+                        Dance like nobody is watching. 💃
+                        Eat something delicious. 🍕
+                        And think about your little sister who is probably somewhere saying:
+
+                        “Yep. That's my Kannu Akka.” 😌💙
+
+                        Also, please save some of this happiness for the days when you need it. You never know when I'll
+                        come along with another stupid joke and make everything 10× crazier. 😂
+
+                        Keep smiling. Keep laughing. Keep being your crazy self.
+
+                        And remember...
+
+                        <strong>YOUR HAPPINESS = MY HAPPINESS.</strong> 💙💜
+
+                        Now go enjoy your day before I come there and annoy you. 😭😂
+
+                        Love you forever, Akka! 🫶💙
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="card open-card" onclick="toggleCard(this)">
+
+                    <div class="cover">
+
+                        <div class="icon">💜</div>
+
+                        <h3>
+                            Open When You're Angry
+                        </h3>
+
+                    </div>
+
+                    <div class="inside">
+
+                        💜 Take a breath.
+
+                        Everything doesn't need to be solved at once.
+
+                        <br><br>
+
+                        💜💜 take a pencil or pen and scratch on a paper .....
+                        if you're still angry shout loudly
+                        🚨🚨 KANNU AKKA ALERT 🚨🚨
+
+                        OH NOOO. 😭
+
+                        Someone is angry.
+
+                        And judging by the fact that you're reading this...
+
+                        <strong>IT'S YOU.</strong> 😂
+
+                        Okay, first rule:
+
+                        ❌ Don't throw anything.
+                        ❌ Don't start an argument.
+                        ❌ Don't send that angry message yet. 😭
+                        ❌ And PLEASE don't blame me. I wasn't even there! 😂
+
+                        Take a deep breath...
+
+                        Inhale... 😮‍💨
+                        Exhale... 😌
+
+                        Again.
+
+                        Good.
+
+                        Now imagine me standing in front of you with the stupidest expression possible. 🤡
+
+                        Still angry?
+
+                        Okay, emergency plan activated. 🚨
+
+                        Remember our random talks, our stupid jokes, our food adventures, our dancing, our games, and
+                        all those moments where we laughed for absolutely no reason. 😂💙
+
+                        And if you're still angry...
+
+                        Fine.
+
+                        You are officially allowed to be angry for <strong>5 minutes</strong>.
+
+                        ONLY FIVE. ⏰😂
+
+                        After that, you have to come back to being my favourite Kannu Akka.
+
+                        And remember:
+
+                        Whatever happened today will pass.
+
+                        Your little sister is still here.
+
+                        Your memories are still here.
+
+                        And unfortunately for you...
+
+                        <strong>I'M STILL HERE TOO.</strong> 😭😂💙
+
+                        Now go drink some water, take a breath, and fix that angry face. 😤😂
+
+                        Because honestly...
+
+                        <strong>YOU LOOK WAY CUTER WHEN YOU'RE LAUGHING.</strong> 💜
+
+                        Love you, angry bird. 🐦😂💙
+
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="card open-card" onclick="toggleCard(this)">
+
+                    <div class="cover">
+
+                        <div class="icon">💜</div>
+
+                        <h3>
+                            Open When You Miss Me
+                        </h3>
+
+                    </div>
+
+                    <div class="inside">
+
+                        💜 Look at our memories and remember that distance can't erase them.
+
+                        <br><br>
+
+                        💜💜🚨 KANNU AKKA, PAUSE EVERYTHING. 🚨
+
+                        Yes, YOU. 🫵😂
+
+                        If your brain is currently running 847 thoughts at the same time, STOP. 😭
+
+                        First:
+
+                        Take a slow breath. 😮‍💨
+                        Put your phone down for a second.
+                        Relax your shoulders.
+                        And remember that you don't have to figure everything out all at once. 💙
+
+                        Whatever is bothering you right now probably feels HUGE, but you don't have to solve your whole
+                        life tonight.
+
+                        And if your brain starts saying:
+
+                        “What if this happens?”
+                        “What if that goes wrong?”
+                        “What if—”
+
+                        Tell your brain:
+
+                        <strong>BRO, CALM DOWN. WE ARE NOT DOING THIS TODAY.</strong> 😭😂
+
+                        Now think about us.
+
+                        Our stupid conversations. 😂
+                        Our random dancing. 💃
+                        Our food adventures. 🍕
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PHOTO GALLERY ================= -->
+
+    <section>
+
+        <div class="container">
+
+            <h2 class="title">
+                Our Memories 💜
+            </h2>
+
+            <p class="subtitle">
+
+                Six little spaces
+                for six favourite memories.
+
+            </p>
+
+
+            <div class="gallery">
+
+
+                <div class="photo">
+                    <img src="photo1.jpeg" alt="Memory 1 with Kannu Akka">
+                </div>
+
+
+                <div class="photo">
+                    <img src="photo2.jpeg" alt="Memory 2 with Kannu Akka">
+                </div>
+
+
+                <div class="photo">
+                    <img src="photo3.jpeg" alt="Memory 3 with Kannu Akka">
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MEMORIES ================= -->
+
+    <section>
+
+        <div class="container">
+
+            <h2 class="title">
+                Little Things I Remember 💜
+            </h2>
+
+
+            <div class="memory-grid">
+
+
+                <div class="card">
+
+                    <h3>
+                        💜 Our Talks
+                    </h3>
+
+                    <p>
+                        💜💜 do you remember taking late at night ...😅😅
+                        if not 🤯
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3>
+                        💜 Food Moments
+                    </h3>
+
+                    <p>
+                        💜💜remember when we have gone vagus mall to eat sushi ....😫😫
+                    </p>
+
+                </div>
+
+
+
+
+
+
+                <div class="card">
+
+                    <h3>
+                        💜 Crazy Moments
+                    </h3>
+
+                    <p>
+                        💜💜remember when we were playing "who knows me better " with bowls full of water and
+                        accidentally all the bowls fell on the bed
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MONTHS ================= -->
+
+    <section>
+
+        <div class="container">
+
+            <h2 class="title">
+                A Little Countdown 💜
+            </h2>
+
+
+            <div class="grid">
+
+
+                <div class="card month">
+
+                    <h3>
+                        October 💜
+                    </h3>
+
+                    <p>
+                        💜💜dodo's birthday definitely a little princess
+                    </p>
+
+                </div>
+
+
+                <div class="card month">
+
+                    <h3>
+                        November 💜
+                    </h3>
+
+                    <p>
+                        💜💜 Happy Diwali and Happy Bhai Dooj , we are sisters it doesn't means we can't take care of
+                        each other
+
+                    </p>
+
+                </div>
+
+
+                <div class="card month">
+
+                    <h3>
+                        December 💜
+                    </h3>
+
+                    <p>
+                        💜💜 my birthday😍😍😍🥰🥰
+                    </p>
+
+                </div>
+
+
+                <div class="card month">
+
+                    <h3>
+                        January 💜
+                    </h3>
+
+                    <p>
+                        💜💜 happy new year
+
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================================================= -->
+    <!-- ================= FLIGHT SECTION ================= -->
+    <!-- ================================================= -->
+
+    <section class="flight-section">
+
+        <div class="container">
+
+
+            <h2 class="title">
+                Different Places, Same Bond 💜
+            </h2>
+
+
+            <p class="subtitle">
+
+                Even thousands of kilometres
+                can't change our bond. 💜
+
+            </p>
+
+
+            <div class="flight-card">
+
+
+                <!-- INDIA -->
+
+                <div class="location india">
+
+                    <div class="flag">
+                        💜💜
+                    </div>
+
+                    <h3>
+                        India
+                    </h3>
+
+                    <p>
+                        Where the memories are 💜
+                    </p>
+
+                </div>
+
+
+                <!-- FLIGHT PATH -->
+
+                <div class="flight-route">
+
+                    <div class="route-line"></div>
+
+
+                    <div class="cloud cloud1">
+                        💜💜
+                    </div>
+
+
+                    <div class="cloud cloud2">
+                        💜💜
+                    </div>
+
+
+                    <div class="plane">
+                        💜💜
+                    </div>
+
+
+                    <div class="spark spark1">
+                        💜
+                    </div>
+
+                    <div class="spark spark2">
+                        💜
+                    </div>
+
+                    <div class="spark spark3">
+                        💜
+                    </div>
+
+
+                </div>
+
+
+                <!-- SAUDI -->
+
+                <div class="location saudi">
+
+                    <div class="flag">
+                        💜💜
+                    </div>
+
+                    <h3>
+                        Saudi Arabia
+                    </h3>
+
+                    <p>
+                        Where you're going next 💜
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="card flight-message">
+
+                <p>
+
+                    💜💜 <b>India 💜 Saudi Arabia</b>
+
+                    <br><br>
+
+                    Distance may change the map,
+                    but it will never change
+                    the memories,
+                    the laughs,
+                    the talks,
+                    and the bond we share.
+
+                    <br><br>
+
+                    💜 No matter where you are,
+                    you'll always have a special place
+                    in my heart.
+
+                    <br><br>
+
+                    💜💜 I really miss you. Come to India soon!
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FINAL SURPRISE ================= -->
+
+    <section class="final">
+
+        <div class="final-box">
+
+
+            <p>
+
+                💜💜 🎂💙 HAPPY BIRTHDAY, KANNU AKKA! 💙🎂
+
+                Today is all about YOU! 🥳✨
+
+                I don't think I'll ever be able to explain properly how much you mean to me. You're not just my
+                sister—you are someone who has given me so many memories, laughs, silly conversations, crazy moments,
+                and moments that I will always keep close to my heart. 💜
+
+                From our random talks to our food adventures, dancing, games, laughter, and all the nonsense only we
+                understand 😂, every little memory with you is special to me.
+
+                And even though we may be far away from each other, nothing can change what you mean to me. ✈️🇮🇳💙🇸🇦
+
+                I hope your birthday brings you the biggest smile, the happiest moments, and everything you've been
+                wishing for. I hope this new year of your life is filled with happiness, success, love, adventures, and
+                beautiful memories. ✨
+
+                Whenever you're happy, I'll be happy with you.
+                Whenever you're sad, I'll try my best to make you laugh.
+                Whenever you're angry, I'll probably annoy you even more. 😂
+                And whenever you miss me, just remember that I'm missing you too. 🥺💙
+
+                Thank you for being my Kannu Akka, for being part of so many of my favourite memories, and for giving me
+                a bond that distance can never take away.
+
+                No matter how far the flight takes you, no matter how much time passes, and no matter where life takes
+                us...
+
+                <strong>You'll always be my Akka.</strong> 💙
+
+                I love you more than all the words on this website could ever say. 🥺💜
+
+                So today, laugh loudly, smile endlessly, eat something delicious, enjoy every second, and HAVE THE BEST
+                BIRTHDAY EVER! 🎂🥳🎉
+
+                Happy Birthday once again, Kannu Akka! 💙💜
+
+                With all my love,
+                <strong>Your little sister, Jiya</strong> 🫶💙
+
+                I hope you liked the surprise
+
+                <br><br>
+
+                You can make this your most emotional,
+                funny, or personal message.
+
+                <br><br>
+
+                Happy Birthday once again,
+                Kannu Akka. 💜💜
+
+            </p>
+
+
+            <button type="button" class="glow-button" onclick="finalSurprise()">
+
+                Tap For One Last Surprise ✨
+
+            </button>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        Made with 💜💜
+        specially for Kannu Akka
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script>
+
+
+        /* ================= STARS ================= */
+
+        const stars =
+            document.getElementById("stars");
+
+
+        for (let i = 0; i < 100; i++) {
+
+            const star =
+                document.createElement("div");
+
+            star.className = "star";
+
+            star.style.left =
+                Math.random() * 100 + "%";
+
+            star.style.top =
+                Math.random() * 100 + "%";
+
+            star.style.animationDelay =
+                Math.random() * 2 + "s";
+
+            stars.appendChild(star);
+        }
+
+
+        /* ================= SCROLL TO CAKE ================= */
+
+        function scrollToCake() {
+
+            document
+                .getElementById("cakeSection")
+                .scrollIntoView({
+                    behavior: "smooth"
+                });
+
+        }
+
+
+        /* ================= BLOW CANDLES ================= */
+
+        let candlesBlown = false;
+
+
+        function blowCandles() {
+
+            if (candlesBlown)
+                return;
+
+            candlesBlown = true;
+
+
+            document
+                .querySelectorAll(".candle")
+                .forEach(candle => {
+
+                    candle.classList.add("out");
+
+                });
+
+
+            document
+                .getElementById("wishText")
+                .innerHTML =
+                " Wish made! Happy Birthday Kannu Akka! ";
+
+
+            createHearts(40);
+
+        }
+
+
+        /* ================= HEARTS ================= */
+
+        const hearts = ["💙", "💜", "💖", "💕", "✨", "💗"];
+
+        function createHearts(amount) {
+
+            for (let i = 0; i < amount; i++) {
+
+                setTimeout(() => {
+
+                    const heart =
+                        document.createElement("div");
+
+                    heart.className = "heart";
+                    heart.innerHTML =
+                        hearts[
+                        Math.floor(
+                            Math.random() * hearts.length
+                        )
+                        ];
+
+
+                    heart.style.left =
+                        Math.random() * 100 + "vw";
+
+
+                    heart.style.bottom = "20px";
+
+
+                    heart.style.fontSize =
+                        (18 + Math.random() * 25) + "px";
+
+
+                    document.body
+                        .appendChild(heart);
+
+
+                    setTimeout(() => {
+
+                        heart.remove();
+
+                    }, 2000);
+
+
+                }, i * 60);
+
+            }
+
+        }
+
+
+        /* ================= OPEN WHEN CARDS ================= */
+
+        function toggleCard(card) {
+
+            card.classList.toggle("active");
+
+        }
+
+
+        /* ================= FINAL SURPRISE ================= */
+
+        function finalSurprise() {
+
+            createHearts(100);
+
+
+            setTimeout(() => {
+
+                alert("HAPPY BIRTHDAY KANNU AKKA!\n\nYou are loved more than you know.");
+
+            }, 600);
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>
